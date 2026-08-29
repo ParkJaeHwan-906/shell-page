@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>hwannee@shell</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="stage">
+    <section class="window" id="window">
+      <header class="titlebar">
+        <div class="lights">
+          <span class="light red"></span>
+          <span class="light yellow"></span>
+          <span class="light green"></span>
+        </div>
+        <div class="title" id="win-title">shell</div>
+        <div class="titlebar-right">
+          <button class="tb-btn" id="btn-restart" title="다시 재생 (R)">↻</button>
+          <button class="tb-btn" id="btn-skip" title="전체 건너뛰기 (Esc)">⏭</button>
+        </div>
+      </header>
+
+      <div class="screen" id="screen" tabindex="0">
+        <div class="scanlines" aria-hidden="true"></div>
+        <div class="terminal" id="terminal" role="log" aria-live="polite"></div>
+      </div>
+
+      <footer class="statusbar">
+        <span class="seg seg-mode" id="st-mode">BOOT</span>
+        <span class="seg" id="st-branch">⎇ main</span>
+        <span class="seg grow" id="st-hint">클릭하면 빨리감기 · Esc 건너뛰기</span>
+        <span class="seg" id="st-clock">--:--:--</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="terminal.js"></script>
+</body>
+</html>
