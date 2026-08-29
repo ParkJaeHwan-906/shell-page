@@ -61,7 +61,7 @@ const SHELL = {
   "name":   "박재환",
   "github": "ParkJaeHwan-906",
   "role":   "Backend Engineer",
-  "stack":  ["Java", "Spring Boot", "MySQL", "Redis"],
+  "stack":  ["Java", "Spring Boot", "MySQL", "Redis", "Docker"],
   "status": "open to work"
 }`
         }
@@ -102,15 +102,13 @@ const SHELL = {
         {
           type: "kv",
           pairs: [
-            ["Language ", "Java · Kotlin · TypeScript"],
-            ["Framework", "Spring Boot · JPA · Next.js"],
-            ["Data     ", "MySQL · Redis"],
-            ["Infra    ", "AWS · Docker · GitHub Actions"]
+            ["Back-End ", "Java · Spring Boot · FastAPI · JPA · Node.js · MyBatis"],
+            ["Language ", "Python · JavaScript"],
+            ["Database ", "MySQL · Redis · MongoDB · PostgreSQL"],
+            ["DevOps   ", "Docker · Jenkins · Nginx"],
+            ["Front-End", "Vue.js · React · HTML/CSS"]
           ]
-        },
-        { type: "blank" },
-        { type: "head", text: "NOW LEARNING" },
-        { type: "list", items: ["Kubernetes", "gRPC", "Event-driven architecture"] }
+        }
       ]
     },
 
@@ -142,12 +140,16 @@ const SHELL = {
     ],
 
     skills: [
-      { type: "list", items: [
-        "Java / Kotlin / TypeScript",
-        "Spring Boot / JPA / Next.js",
-        "MySQL / Redis",
-        "AWS / Docker / GitHub Actions"
-      ]}
+      { type: "head", text: "Back-End" },
+      { type: "list", items: ["Java", "Spring Boot", "FastAPI", "JPA", "Node.js", "MyBatis"] },
+      { type: "head", text: "Language" },
+      { type: "list", items: ["Python", "JavaScript"] },
+      { type: "head", text: "Database" },
+      { type: "list", items: ["MySQL", "Redis", "MongoDB", "PostgreSQL"] },
+      { type: "head", text: "DevOps" },
+      { type: "list", items: ["Docker", "Jenkins", "Nginx"] },
+      { type: "head", text: "Front-End" },
+      { type: "list", items: ["Vue.js", "React", "HTML / CSS"] }
     ],
 
     projects: [
