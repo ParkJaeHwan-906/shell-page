@@ -71,7 +71,7 @@ const SHELL = {
     {
       cmd: "ls -la ./projects",
       out: [
-        { type: "muted", text: "total 5" },
+        { type: "muted", text: "total 4" },
         {
           type: "table",
           head: ["PERM", "NAME", "DESCRIPTION"],
@@ -80,7 +80,6 @@ const SHELL = {
             ["drwxr-xr-x", "YGSS/",          "사회초년생 퇴직연금 추천 서비스"],
             ["drwxr-xr-x", "onAiR/",         "AI·AR 산업 현장 스마트 헬멧"],
             ["drwxr-xr-x", "POOKIE/",        "mini web game platform"],
-            ["drwxr-xr-x", "MusoonZupZup/",  "무순위 청약 플랫폼 무순줍줍"]
           ]
         }
       ]
@@ -106,6 +105,7 @@ const SHELL = {
             ["Language ", "Python · JavaScript"],
             ["Database ", "MySQL · Redis · MongoDB · PostgreSQL"],
             ["DevOps   ", "Docker · Jenkins · Nginx"],
+            ["Infra    ", "AWS · Terraform · Kubernetes(EKS) · GitHub Actions · Lambda · Bedrock"],
             ["Front-End", "Vue.js · React · HTML/CSS"]
           ]
         }
@@ -115,7 +115,7 @@ const SHELL = {
     {
       cmd: "contact --all",
       out: [
-        { type: "link", label: "swm.jeahwan@gmail.com",             href: "mailto:swm.jeahwan@gmail.com" },
+        { type: "link", label: "doormoo2@naver.com",             href: "mailto:doormoo2@naver.com" },
         { type: "link", label: "github.com/ParkJaeHwan-906",        href: "https://github.com/ParkJaeHwan-906" },
         { type: "link", label: "parkjaehwan-906.github.io",         href: "https://parkjaehwan-906.github.io" }
       ]
@@ -148,6 +148,8 @@ const SHELL = {
       { type: "list", items: ["MySQL", "Redis", "MongoDB", "PostgreSQL"] },
       { type: "head", text: "DevOps" },
       { type: "list", items: ["Docker", "Jenkins", "Nginx"] },
+      { type: "head", text: "Infra · Cloud" },
+      { type: "list", items: ["AWS (EKS · ALB · CloudFront · S3 · Route 53)", "Terraform", "Kubernetes", "GitHub Actions (OIDC) · ECR", "Lambda · EventBridge · SQS", "Amazon Bedrock"] },
       { type: "head", text: "Front-End" },
       { type: "list", items: ["Vue.js", "React", "HTML / CSS"] }
     ],
@@ -158,14 +160,13 @@ const SHELL = {
         ["YGSS         ", "사회초년생 퇴직연금 추천 서비스"],
         ["onAiR        ", "AI·AR 산업 현장 스마트 헬멧"],
         ["POOKIE       ", "mini web game platform"],
-        ["MusoonZupZup ", "무순위 청약 플랫폼 무순줍줍"]
       ]},
       { type: "blank" },
       { type: "link", label: "전체 레포지터리 보기", href: "https://github.com/ParkJaeHwan-906?tab=repositories" }
     ],
 
     contact: [
-      { type: "link", label: "swm.jeahwan@gmail.com",      href: "mailto:swm.jeahwan@gmail.com" },
+      { type: "link", label: "doormoo2@naver.com",      href: "mailto:doormoo2@naver.com" },
       { type: "link", label: "github.com/ParkJaeHwan-906", href: "https://github.com/ParkJaeHwan-906" },
       { type: "link", label: "parkjaehwan-906.github.io",  href: "https://parkjaehwan-906.github.io" }
     ],
